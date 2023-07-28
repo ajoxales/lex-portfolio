@@ -1,6 +1,5 @@
 "use client";
-import React, { useEffect } from "react";
-import { useRef } from "react";
+import React from "react";
 //components
 import { Container, Col, Row } from "react-bootstrap";
 import Skills from "@/components/Skills";

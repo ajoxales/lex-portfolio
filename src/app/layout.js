@@ -1,3 +1,4 @@
+"use client";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Poppins } from "next/font/google";
 import NavbarComp from "@/components/NavbarComp";
