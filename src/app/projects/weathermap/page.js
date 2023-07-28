@@ -9,7 +9,7 @@ import Head from "next/head";
 
 const rubik = Rubik({ subsets: ["latin"] });
 
-const HomePage = () => {
+const page = () => {
 	return (
 		<>
 			<Head>
@@ -28,4 +28,4 @@ const HomePage = () => {
 	);
 };
 
-export default HomePage;
+export default page;

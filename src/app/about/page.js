@@ -5,7 +5,7 @@ import { Container } from "react-bootstrap";
 import avatar from "@/app/assets/about2.svg";
 import { motion } from "framer-motion";
 
-const About = () => {
+const page = () => {
 	return (
 		<div className="text-white pt-5">
 			<Container>
@@ -202,4 +202,4 @@ const About = () => {
 	);
 };
 
-export default About;
+export default page;
