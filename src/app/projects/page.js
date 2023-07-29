@@ -9,7 +9,7 @@ import mockup1 from "@/app/assets/mock1.svg";
 import mockup2 from "@/app/assets/mock2.svg";
 import mockup3 from "@/app/assets/mockup3.png";
 
-const page = () => {
+const Page = () => {
 	return (
 		<div>
 			<Container className="py-5">
@@ -166,4 +166,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

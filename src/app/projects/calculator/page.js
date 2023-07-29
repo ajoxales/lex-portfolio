@@ -5,7 +5,7 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import HeaderComponent from "@/app/projects/calculator/components/HeaderComponent";
 import Calculator from "@/app/projects/calculator/components/Calculator";
 
-const page = () => {
+const Page = () => {
 	return (
 		<div>
 			<HeaderComponent />
@@ -14,4 +14,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;

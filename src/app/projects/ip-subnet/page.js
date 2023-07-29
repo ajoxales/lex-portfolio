@@ -10,7 +10,7 @@ import { Inter } from "next/font/google";
 import Head from "next/head";
 import { useState } from "react";
 
-const page = () => {
+const Page = () => {
 	const [networkAddress, setNetworkAddress] = useState("");
 	const [firstUsable, setFirstUsable] = useState("");
 	const [lastUsable, setLastUsable] = useState("");
@@ -432,4 +432,4 @@ const page = () => {
 	);
 };
 
-export default page;
+export default Page;
