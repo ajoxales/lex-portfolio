@@ -296,7 +296,7 @@ const Page = () => {
 
 		setNetworkAddress(networkAddress);
 		setSubnetMask(subnetMask);
-		setSubnetMaskOctet(subnetMaskBinary);
+		setSubnetMaskOctet(subnetMaskBinary.toString());
 		setBroadcastAddress(broadcastAddress);
 		setNextNetwork(nextNetwork);
 		setFirstUsable(firstUsable);
@@ -400,30 +400,40 @@ const Page = () => {
 				</div>
 			</div>
 
-			<div className="bg-dark px-1 rounded-2 w-50 m-auto">
+			<div className="container bg-dark px-1 rounded-2 w-50 m-auto">
 				<Table variant="dark" className="container">
 					<tbody className={styles.table}>
 						<tr>
-							<td className="w-25">Subnet Mask:</td>
-							<td className="table-dark w-25">{subnetMask}</td>
+							<td className="w-50 text-break">Subnet Mask:</td>
+							<td className="table-dark text-break  ">
+								{subnetMask}
+							</td>
 						</tr>
 						<tr>
-							<td className="w-25">Binary Subnet Mask:</td>
-							<td className="table-dark w-25">
+							<td className="w-50 text-break">
+								Binary Subnet Mask:
+							</td>
+							<td className="table-dark text-break  ">
 								{subnetMaskOctet}
 							</td>
 						</tr>
 						<tr>
-							<td className="w-25">IP Class:</td>
-							<td className="table-dark w-25">{ipClass}</td>
+							<td className="w-50">IP Class:</td>
+							<td className="table-dark text-break  ">
+								{ipClass}
+							</td>
 						</tr>
 						<tr>
-							<td className="w-25">Total Number of Hosts:</td>
-							<td className="table-dark w-25">{totalHosts}</td>
+							<td className="w-50">Total Number of Hosts:</td>
+							<td className="table-dark text-break  ">
+								{totalHosts}
+							</td>
 						</tr>
 						<tr>
-							<td className="w-25">Usable Hosts:</td>
-							<td className="table-dark w-25">{usableHosts}</td>
+							<td className="w-50">Usable Hosts:</td>
+							<td className="table-dark text-break  ">
+								{usableHosts}
+							</td>
 						</tr>
 					</tbody>
 				</Table>

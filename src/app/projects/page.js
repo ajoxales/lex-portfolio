@@ -7,7 +7,7 @@ import { motion } from "framer-motion";
 
 import mockup1 from "@/app/assets/mock1.svg";
 import mockup2 from "@/app/assets/mock2.svg";
-import mockup3 from "@/app/assets/mockup3.png";
+import mockup3 from "@/app/assets/mockup-3.svg";
 
 const Page = () => {
 	return (

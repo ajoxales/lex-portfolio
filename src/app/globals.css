@@ -88,7 +88,7 @@ body {
 	letter-spacing: -0.5px;
 	max-width: 100vw;
 	overflow-x: hidden;
-	background-color: #0e1317;
+	background-color: #0e141c;
 }
 
 h1 {
@@ -107,7 +107,7 @@ h2 {
 }
 
 #about {
-	background: var(--primary-glow);
+	background-color: #0e141c;
 	background-repeat: no-repeat;
 }
 

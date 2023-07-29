@@ -19,7 +19,7 @@ import about from "../app/assets/about_photo.jpg";
 import hero from "../app/assets/hero-1.svg";
 import mockup1 from "../app/assets/mockup1.png";
 import mockup2 from "../app/assets/mockup2.png";
-import mockup3 from "../app/assets/mockup3.png";
+import mockup3 from "../app/assets/mockup-3.svg";
 
 export default function Home() {
 	return (
@@ -242,9 +242,9 @@ export default function Home() {
 									<Link href="/projects/calculator">
 										<div className="zoom-on-hover">
 											<Image
-												className="ms-4	 mt-2 pb-5"
+												className="ms-3	mt-2 pb-5"
 												src={mockup2}
-												height={430}
+												height={435}
 												style={{
 													position: "relative",
 													objectFit: "cover",
