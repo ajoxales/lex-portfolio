@@ -1,12 +1,6 @@
-"use client";
 import { Poppins } from "next/font/google";
 import NavbarComp from "@/components/NavbarComp";
 import Footer from "@/components/Footer";
-
-export const metadata = {
-	title: "Lex Oxales",
-	viewport: "width=device-width, initial-scale=1",
-};
 
 const poppins = Poppins({
 	subsets: ["latin"],
