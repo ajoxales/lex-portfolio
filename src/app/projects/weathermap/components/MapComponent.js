@@ -11,6 +11,7 @@ const MapComponent = () => {
 		lat: 14.300081228945489,
 		lng: 120.95477712384054,
 	});
+	const [clickedCoords, setClickedCoords] = useState(centerCoords);
 	const [lat, setLat] = useState(14.299);
 	const [long, setLong] = useState(120.959);
 	const [loc, setLoc] = useState("");
@@ -37,15 +38,12 @@ const MapComponent = () => {
 	});
 
 	const handleMapClick = (event) => {
-		const lat = parseFloat(event.latLng.lat());
-		const lng = parseFloat(event.latLng.lng());
-		setLat(lat);
-		setLong(lng);
-		console.log("Lat: " + lat + "Long: " + lng);
+		const lati = parseFloat(event.latLng.lat());
+		const long = parseFloat(event.latLng.lng());
+		setLat(lati);
+		setLong(long);
 
-		const clickedCoords = { lati: lat, long: lng };
-
-		setCenterCoords(clickedCoords);
+		setClickedCoords({ lat: lati, lng: long });
 	};
 
 	useEffect(() => {
@@ -168,7 +166,7 @@ const MapComponent = () => {
 						center={centerCoords}
 						zoom={12}
 						onClick={handleMapClick}>
-						<Marker position={centerCoords} />
+						<Marker position={clickedCoords} />
 					</GoogleMap>
 				</LoadScript>
 			</div>
