@@ -5,6 +5,9 @@ import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import WeatherComponent from "./WeatherComponent";
 import { useState, useEffect } from "react";
 
+const google_api_key = process.env.NEXT_PUBLIC_GOOGLE_MAPS_API_KEY;
+const weather_api_Key = process.env.NEXT_PUBLIC_WEATHERAPI_API_KEY;
+
 const MapComponent = () => {
 	// Center coordinates for the map
 	const [centerCoords, setCenterCoords] = useState({
@@ -55,8 +58,8 @@ const MapComponent = () => {
 
 	useEffect(() => {
 		let loc = "";
-		const apiKey = "af4ac4ae55334cd4b82114537232407";
-		const url = `https://api.weatherapi.com/v1/forecast.json?key=${apiKey}&q=${lat},${long}&days=3`;
+
+		const url = `https://api.weatherapi.com/v1/forecast.json?key=${weather_api_Key}&q=${lat},${long}&days=3`;
 
 		fetch(url)
 			.then((response) => response.json())
@@ -160,7 +163,7 @@ const MapComponent = () => {
 	return (
 		<div>
 			<div>
-				<LoadScript googleMapsApiKey="AIzaSyAjoogJgLV7u5L_w-yotaxTh-qbEQZoND0">
+				<LoadScript googleMapsApiKey={google_api_key}>
 					<GoogleMap
 						mapContainerStyle={{ width: "100%", height: "460px" }}
 						center={centerCoords}

@@ -13,21 +13,21 @@ const Socials = () => {
 						<Nav.Link
 							href="https://www.facebook.com/lex.oxales"
 							target="_blank">
-							<i class="bi bi-facebook fs-5 text-white me-2"></i>
+							<i className="bi bi-facebook fs-5 text-white me-2"></i>
 						</Nav.Link>
 					</Nav.Item>
 					<Nav.Item as="li">
 						<Nav.Link
 							href="https://www.instagram.com/_jowsep_/"
 							target="_blank">
-							<i class="bi bi-instagram fs-5 text-white me-2"></i>
+							<i className="bi bi-instagram fs-5 text-white me-2"></i>
 						</Nav.Link>
 					</Nav.Item>
 					<Nav.Item as="li">
 						<Nav.Link
 							href="https://github.com/ajoxales"
 							target="_blank">
-							<i class="bi bi-github fs-5 text-white me-2"></i>
+							<i className="bi bi-github fs-5 text-white me-2"></i>
 						</Nav.Link>
 					</Nav.Item>
 				</Nav>

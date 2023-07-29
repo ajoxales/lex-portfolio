@@ -134,7 +134,7 @@ export default function Home() {
 									who am i?
 								</h3>
 							</div>
-							<p class="pb-3" style={{ fontWeight: 600 }}>
+							<p className="pb-3" style={{ fontWeight: 600 }}>
 								I'm a 3rd-year college student pursuing Bachelor
 								of Science in Information Technology at De La
 								Salle University - Dasmarinas. Since childhood,
@@ -152,7 +152,7 @@ export default function Home() {
 							<button className="btn bg-info-subtle text-info-emphasis mt-4 fw-medium">
 								<Link href="/about">
 									Learn More{" "}
-									<i class="bi bi-arrow-right-short"></i>
+									<i className="bi bi-arrow-right-short"></i>
 								</Link>
 							</button>
 						</article>

@@ -100,7 +100,7 @@ const About = () => {
 										}}
 										className="btn btn-dark">
 										<span>Behance</span>
-										<i class="bi bi-behance text-white ms-3"></i>
+										<i className="bi bi-behance text-white ms-3"></i>
 									</motion.button>
 								</a>
 								<a
@@ -115,7 +115,7 @@ const About = () => {
 										}}
 										className="btn btn-danger ms-2">
 										<span className="pb-2">YouTube</span>
-										<i class="bi bi-youtube text-white ms-3"></i>
+										<i className="bi bi-youtube text-white ms-3"></i>
 									</motion.button>
 								</a>
 							</article>
@@ -135,8 +135,8 @@ const About = () => {
 								<h2
 									className="fs-4"
 									style={{ color: "#D0D0D0" }}>
-									<i class="bi bi-code-square me-2"></i> Web
-									Development
+									<i className="bi bi-code-square me-2"></i>{" "}
+									Web Development
 								</h2>
 								<h3 className="fs-6">
 									<div className="badge text-bg-info">
@@ -176,7 +176,7 @@ const About = () => {
 								<h2
 									className="fs-4 mt-3"
 									style={{ color: "#D0D0D0" }}>
-									<i class="bi bi-camera-reels me-2"></i>{" "}
+									<i className="bi bi-camera-reels me-2"></i>{" "}
 									Multimedia
 								</h2>
 								<h3 className="fs-6">

@@ -53,7 +53,7 @@ const Page = () => {
 									<h2>WeatherMap</h2>
 									<p>
 										<a href="/projects/weathermap">
-											<i class="bi bi-box-arrow-up-right"></i>
+											<i className="bi bi-box-arrow-up-right"></i>
 										</a>
 									</p>
 								</div>
@@ -95,7 +95,7 @@ const Page = () => {
 									<h2>Calculator</h2>
 									<p>
 										<a href="/projects/calculator">
-											<i class="bi bi-box-arrow-up-right"></i>
+											<i className="bi bi-box-arrow-up-right"></i>
 										</a>
 									</p>
 								</div>
