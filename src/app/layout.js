@@ -1,9 +1,7 @@
 "use client";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { Poppins } from "next/font/google";
 import NavbarComp from "@/components/NavbarComp";
 import Footer from "@/components/Footer";
-import "../app/globals.css";
 
 export const metadata = {
 	title: "Lex Oxales",
