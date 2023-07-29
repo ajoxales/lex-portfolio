@@ -1,5 +1,5 @@
+"use client";
 import React from "react";
-import { motion, useInView } from "framer-motion";
 import { Row, Col } from "react-bootstrap";
 import Image from "next/image";
 import html from "../app/assets/html.png";

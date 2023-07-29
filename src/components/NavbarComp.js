@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
