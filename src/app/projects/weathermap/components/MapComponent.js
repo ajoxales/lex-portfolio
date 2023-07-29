@@ -7,7 +7,10 @@ import { useState, useEffect } from "react";
 
 const MapComponent = () => {
 	// Center coordinates for the map
-	const centerCoords = { lat: 14.300081228945489, lng: 120.95477712384054 };
+	const [centerCoords, setCenterCoords] = useState({
+		lat: 14.300081228945489,
+		lng: 120.95477712384054,
+	});
 	const [lat, setLat] = useState(14.299);
 	const [long, setLong] = useState(120.959);
 	const [loc, setLoc] = useState("");
@@ -39,6 +42,10 @@ const MapComponent = () => {
 		setLat(lat);
 		setLong(lng);
 		console.log("Lat: " + lat + "Long: " + lng);
+
+		const clickedCoords = { lati: lat, long: lng };
+
+		setCenterCoords(clickedCoords);
 	};
 
 	useEffect(() => {
