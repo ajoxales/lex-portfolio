@@ -151,6 +151,20 @@ p {
 	-webkit-text-fill-color: transparent;
 }
 
+.aboutalex {
+	font-size: 57px;
+	line-height: 1.1;
+	font-weight: 700;
+	letter-spacing: -0.1rem;
+	padding: 0;
+	background: #4fbdeb;
+	background: -webkit-linear-gradient(to right, #6fcef7 23%, #1459a8 100%);
+	background: -moz-linear-gradient(to right, #6fcef7 23%, #1459a8 100%);
+	background: linear-gradient(to right, #6fcef7 23%, #1e73d5 100%);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 .badge {
 	margin: 2px;
 }

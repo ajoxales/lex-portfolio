@@ -6,6 +6,7 @@ import Skills from "@/components/Skills";
 import ContactComp from "@/components/ContactComp.js";
 import Socials from "@/components/Socials";
 import Image from "next/image";
+import Link from "next/link";
 
 //third-party
 import "bootstrap-icons/font/bootstrap-icons.css";
@@ -149,10 +150,10 @@ export default function Home() {
 							</p>
 
 							<button className="btn bg-info-subtle text-info-emphasis mt-4 fw-medium">
-								<a href="/about">
+								<Link href="/about">
 									Learn More{" "}
 									<i class="bi bi-arrow-right-short"></i>
-								</a>
+								</Link>
 							</button>
 						</article>
 
@@ -195,24 +196,28 @@ export default function Home() {
 										height: "300px",
 										backgroundColor: "#21324E",
 									}}>
-									<h2
-										className="text-white p-4"
-										style={{
-											position: "absolute",
-											zIndex: "1000",
-										}}>
-										WeatherMap
-									</h2>
-									<div className="zoom-on-hover">
-										<Image
-											className=" pb-5"
-											src={mockup1}
-											height={450}
+									<Link href="/projects/weathermap">
+										<h2
+											className="text-white p-4"
 											style={{
-												objectFit: "cover",
-											}}
-										/>
-									</div>
+												position: "absolute",
+												zIndex: "1000",
+											}}>
+											WeatherMap
+										</h2>
+									</Link>
+									<Link href="/projects/weathermap">
+										<div className="zoom-on-hover">
+											<Image
+												className=" pb-5"
+												src={mockup1}
+												height={450}
+												style={{
+													objectFit: "cover",
+												}}
+											/>
+										</div>
+									</Link>
 								</div>
 							</Col>
 							<Col>
@@ -223,25 +228,30 @@ export default function Home() {
 										height: "300px",
 										backgroundColor: "#21324E",
 									}}>
-									<h2
-										className="text-white p-4"
-										style={{
-											position: "absolute",
-											zIndex: "1000",
-										}}>
-										Calculator
-									</h2>
-									<div className="zoom-on-hover">
-										<Image
-											className="ms-4	 mt-2 pb-5"
-											src={mockup2}
-											height={430}
+									<Link href="/projects/calculator">
+										<h2
+											className="text-white p-4"
 											style={{
-												position: "relative",
-												objectFit: "cover",
-											}}
-										/>
-									</div>
+												position: "absolute",
+												zIndex: "1000",
+											}}>
+											Calculator
+										</h2>
+									</Link>
+
+									<Link href="/projects/calculator">
+										<div className="zoom-on-hover">
+											<Image
+												className="ms-4	 mt-2 pb-5"
+												src={mockup2}
+												height={430}
+												style={{
+													position: "relative",
+													objectFit: "cover",
+												}}
+											/>
+										</div>
+									</Link>
 								</div>
 							</Col>
 							<Col>
@@ -252,25 +262,29 @@ export default function Home() {
 										height: "300px",
 										backgroundColor: "#21324E",
 									}}>
-									<h2
-										className="text-white p-4"
-										style={{
-											position: "absolute",
-											zIndex: "1000",
-										}}>
-										IP Subnet <br />
-										Calculator
-									</h2>
-									<div className="zoom-on-hover">
-										<Image
-											className="ms-1 pb-5 "
-											src={mockup3}
-											height={450}
+									<Link href="/projects/ip-subnet">
+										<h2
+											className="text-white p-4"
 											style={{
-												objectFit: "cover",
-											}}
-										/>
-									</div>
+												position: "absolute",
+												zIndex: "1000",
+											}}>
+											IP Subnet <br />
+											Calculator
+										</h2>
+									</Link>
+									<Link href="/projects/ip-subnet">
+										<div className="zoom-on-hover">
+											<Image
+												className="ms-1 pb-5 "
+												src={mockup3}
+												height={450}
+												style={{
+													objectFit: "cover",
+												}}
+											/>
+										</div>
+									</Link>
 								</div>
 							</Col>
 						</Row>

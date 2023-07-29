@@ -2,6 +2,7 @@
 import React from "react";
 import { Container } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Link from "next/link";
 
 const Footer = () => {
 	return (
@@ -13,11 +14,11 @@ const Footer = () => {
 							<a
 								href="/"
 								class="mb-3 me-2 mb-md-0 text-white text-decoration-none lh-1"></a>
-							<a href="/">
-								<div className=" fw-bold fs-4 text-secondary">
-									aj
-								</div>
-							</a>
+							<Link
+								href="/"
+								className=" fw-bold fs-5 text-secondary text-decoration-none ms-3">
+								aj
+							</Link>
 						</div>
 
 						<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">

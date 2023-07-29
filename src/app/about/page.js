@@ -4,6 +4,7 @@ import Image from "next/image";
 import { Container } from "react-bootstrap";
 import avatar from "@/app/assets/about2.svg";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
 	return (
@@ -30,11 +31,13 @@ const About = () => {
 							transition={{
 								ease: "easeOut",
 							}}
-							className="alex mb-4">
+							className="aboutalex mb-4">
 							Alexander Joseph <br /> Oxales
 						</motion.h1>
 						<div>
-							<article className="me-2 fs-5">
+							<article
+								className="me-2"
+								style={{ fontSize: "15px" }}>
 								<motion.p
 									initial={{ x: -40, opacity: 0 }}
 									animate={{ x: 0, opacity: 1 }}
@@ -135,7 +138,7 @@ const About = () => {
 									<i class="bi bi-code-square me-2"></i> Web
 									Development
 								</h2>
-								<h3 className="fs-5">
+								<h3 className="fs-6">
 									<div className="badge text-bg-info">
 										HTML5
 									</div>
@@ -176,7 +179,7 @@ const About = () => {
 									<i class="bi bi-camera-reels me-2"></i>{" "}
 									Multimedia
 								</h2>
-								<h3 className="fs-5">
+								<h3 className="fs-6">
 									<div className="badge text-bg-info">
 										Photoshop
 									</div>

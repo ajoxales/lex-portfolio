@@ -2,6 +2,7 @@
 import React from "react";
 import { Container, Nav, Navbar, Offcanvas } from "react-bootstrap";
 import "bootstrap-icons/font/bootstrap-icons.css";
+import Link from "next/link";
 
 const NavbarComp = () => {
 	return (
@@ -14,11 +15,12 @@ const NavbarComp = () => {
 					bg="transparent"
 					data-bs-theme="dark">
 					<Container>
-						<Navbar.Brand className="ms-3">
-							<a href="/">
-								<div className=" fw-bold fs-3">aj</div>
-							</a>
-						</Navbar.Brand>
+						<Link
+							href="/"
+							className=" fw-bold fs-3 text-white text-decoration-none ms-3">
+							aj
+						</Link>
+
 						<Navbar.Toggle
 							aria-controls={`offcanvasNavbar-expand-sm`}
 						/>
