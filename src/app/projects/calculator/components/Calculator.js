@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "@/app/projects/calculator/styles/styles.module.css";
+import "@/app/projects/calculator/styles/styles.css";
 import { useState, useEffect } from "react";
 
 function Calculator() {
@@ -65,7 +65,7 @@ function Calculator() {
 				<div>
 					<input
 						type="text"
-						className={`${styles.display} bg-black text-white border-0 rounded`}
+						className={`display bg-black text-white border-0 rounded`}
 						style={{ textAlign: "right" }}
 						value={result}
 						onChange={handleChange}
@@ -75,26 +75,26 @@ function Calculator() {
 				<div className="row mt-3">
 					<button
 						onClick={handleAllClear}
-						className={`${styles.buttonsGray} col rounded-circle btn btn-light`}>
+						className={`buttonsGray col rounded-circle btn btn-light`}>
 						AC
 					</button>
 
 					<button
 						onClick={handleClear}
-						className={`${styles.buttonsGray} col rounded-circle btn btn-light`}
+						className={`buttonsGray col rounded-circle btn btn-light`}
 						variant="secondary">
 						C
 					</button>
 					<button
 						onClick={handleClick}
-						className={`${styles.buttonsGray} col rounded-circle btn btn-light`}
+						className={`buttonsGray col rounded-circle btn btn-light`}
 						variant="secondary"
 						name="%">
 						%
 					</button>
 					<button
 						onClick={handleClick}
-						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}
+						className={`buttonsOrange col rounded-circle btn btn-primary`}
 						name="/">
 						÷
 					</button>
@@ -103,25 +103,25 @@ function Calculator() {
 					<button
 						name="7"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={`buttons col rounded-circle btn btn-dark`}>
 						7
 					</button>
 					<button
 						name="8"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						8
 					</button>
 					<button
 						name="9"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						9
 					</button>
 					<button
 						name="*"
 						onClick={handleClick}
-						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}>
+						className={` buttonsOrange col rounded-circle btn btn-primary`}>
 						x
 					</button>
 				</div>
@@ -129,25 +129,25 @@ function Calculator() {
 					<button
 						name="4"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						4
 					</button>
 					<button
 						name="5"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						5
 					</button>
 					<button
 						name="6"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						6
 					</button>
 					<button
 						name="-"
 						onClick={handleClick}
-						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}>
+						className={` buttonsOrange col rounded-circle btn btn-primary`}>
 						-
 					</button>
 				</div>
@@ -155,25 +155,25 @@ function Calculator() {
 					<button
 						name="1"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						1
 					</button>
 					<button
 						name="2"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						2
 					</button>
 					<button
 						name="3"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						3
 					</button>
 					<button
 						name="+"
 						onClick={handleClick}
-						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}>
+						className={` buttonsOrange col rounded-circle btn btn-primary`}>
 						+
 					</button>
 				</div>
@@ -181,24 +181,24 @@ function Calculator() {
 					<button
 						name="0"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						0
 					</button>
 					<button
 						name="00"
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={` buttons col rounded-circle btn btn-dark`}>
 						00
 					</button>
 					<button
 						name="."
 						onClick={handleClick}
-						className={`${styles.buttons} col rounded-circle btn btn-dark`}>
+						className={`buttons col rounded-circle btn btn-dark`}>
 						.
 					</button>
 					<button
 						onClick={handleCalculate}
-						className={`${styles.buttonsOrange} col rounded-circle btn btn-primary`}>
+						className={` buttonsOrange col rounded-circle btn btn-primary`}>
 						=
 					</button>
 				</div>

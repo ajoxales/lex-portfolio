@@ -2,7 +2,6 @@
 import React from "react";
 import Image from "next/image";
 import icon from "../assets/calculator1.png";
-import styles from "@/app/projects/calculator/styles/styles.module.css";
 
 const HeaderComponent = () => {
 	return (

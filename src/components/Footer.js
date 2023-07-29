@@ -38,7 +38,7 @@ const Footer = () => {
 							</li>
 							<li className="ms-3">
 								<a
-									class="text-muted"
+									className="text-muted"
 									href="https://github.com/ajoxales">
 									<i className="bi bi-github text-secondary me-2"></i>
 								</a>
