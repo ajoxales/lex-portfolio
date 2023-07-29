@@ -4,24 +4,21 @@ import NavbarComp from "@/components/NavbarComp";
 import Footer from "@/components/Footer";
 import "../app/globals.css";
 
+export const metadata = {
+	title: "Lex Oxales",
+	viewport: "width=device-width, initial-scale=1",
+};
+
 const poppins = Poppins({
 	subsets: ["latin"],
 	weight: ["300", "400", "500", "600", "700"],
 });
-
-export const metadata = {
-	title: "Lex Oxales",
-};
 
 export default function RootLayout({ children }) {
 	return (
 		<html lang="en">
 			<head>
 				<title>Lex Oxales</title>
-				<meta
-					name="viewport"
-					content="width=device-width, initial-scale=1"
-				/>
 				<link rel="icon" href="/code.png" />
 			</head>
 			<body className={`${poppins.className}`} id="about">
