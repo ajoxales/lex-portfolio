@@ -187,12 +187,12 @@ p {
 
 @media only screen and (max-width: 660px) {
 	#hero-img {
-		display: block;
+		display: none;
 	}
 }
 
 @media only screen and (max-width: 768px) {
 	.about-avatar {
-		display: block;
+		display: none;
 	}
 }
