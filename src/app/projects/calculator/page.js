@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import HeaderComponent from "@/app/projects/calculator/components/HeaderComponent";
 import Calculator from "@/app/projects/calculator/components/Calculator";
-import styles from "../calculator/styles/styles.css";
+import style from "../calculator/styles/style.css";
 import Head from "next/head";
 
 const Page = () => {
@@ -13,7 +13,7 @@ const Page = () => {
       <Head>
         <link
           rel="preload"
-          href={styles}
+          href="../calculator/styles/style.css"
           as="style"
           onload="this.onload=null;this.rel='stylesheet'"
         />
