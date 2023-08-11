@@ -1,6 +1,41 @@
 import React from "react";
 import "@/app/projects/calculator/styles/style.css";
 import { useState, useEffect } from "react";
+import styled, { createGlobalStyle } from "styled-components";
+
+const Button = styled.button`
+  background-color: rgb(49, 49, 49);
+  border-color: rgb(49, 49, 49);
+  font-weight: 500;
+  font-size: 29px;
+  height: 65px;
+  width: 65px;
+  margin: 0.25rem;
+  border: none;
+`;
+
+const ButtonLight = styled.button`
+  background-color: rgb(160, 160, 160);
+  border-color: rgb(160, 160, 160);
+  color: black;
+  font-weight: 500;
+  font-size: 29px;
+  height: 65px;
+  width: 65px;
+  margin: 0.25rem;
+  border: none;
+`;
+
+const ButtonBlue = styled.button`
+  background-color: rgb(16, 169, 250);
+  border-color: rgb(16, 169, 250);
+  font-weight: 500;
+  font-size: 29px;
+  height: 65px;
+  width: 65px;
+  margin: 0.25rem;
+  border: none;
+`;
 
 function Calculator() {
   const [result, setResult] = useState("");
@@ -73,134 +108,134 @@ function Calculator() {
           />
         </div>
         <div className="row mt-3">
-          <button
+          <ButtonLight
             onClick={handleAllClear}
-            className={`buttonsGray col rounded-circle btn btn-light`}>
+            className={`col rounded-circle`}>
             AC
-          </button>
+          </ButtonLight>
 
-          <button
+          <ButtonLight
             onClick={handleClear}
-            className={`buttonsGray col rounded-circle btn btn-light`}
+            className={`col rounded-circle`}
             variant="secondary">
             C
-          </button>
-          <button
+          </ButtonLight>
+          <ButtonLight
             onClick={handleClick}
-            className={`buttonsGray col rounded-circle btn btn-light`}
+            className={`col rounded-circle`}
             variant="secondary"
             name="%">
             %
-          </button>
-          <button
+          </ButtonLight>
+          <ButtonBlue
             onClick={handleClick}
-            className={`buttonsOrange col rounded-circle btn btn-primary`}
+            className={`col rounded-circle btn btn-primary`}
             name="/">
             ÷
-          </button>
+          </ButtonBlue>
         </div>
         <div className="row">
-          <button
+          <Button
             name="7"
             onClick={handleClick}
-            className={`buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             7
-          </button>
-          <button
+          </Button>
+          <Button
             name="8"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             8
-          </button>
-          <button
+          </Button>
+          <Button
             name="9"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             9
-          </button>
-          <button
+          </Button>
+          <ButtonBlue
             name="*"
             onClick={handleClick}
-            className={` buttonsOrange col rounded-circle btn btn-primary`}>
+            className={`col rounded-circle btn btn-primary`}>
             x
-          </button>
+          </ButtonBlue>
         </div>
         <div className="row">
-          <button
+          <Button
             name="4"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             4
-          </button>
-          <button
+          </Button>
+          <Button
             name="5"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             5
-          </button>
-          <button
+          </Button>
+          <Button
             name="6"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             6
-          </button>
-          <button
+          </Button>
+          <ButtonBlue
             name="-"
             onClick={handleClick}
-            className={` buttonsOrange col rounded-circle btn btn-primary`}>
+            className={`col rounded-circle btn btn-primary`}>
             -
-          </button>
+          </ButtonBlue>
         </div>
         <div className="row">
-          <button
+          <Button
             name="1"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             1
-          </button>
-          <button
+          </Button>
+          <Button
             name="2"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             2
-          </button>
-          <button
+          </Button>
+          <Button
             name="3"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             3
-          </button>
-          <button
+          </Button>
+          <ButtonBlue
             name="+"
             onClick={handleClick}
-            className={` buttonsOrange col rounded-circle btn btn-primary`}>
+            className={`col rounded-circle btn btn-primary`}>
             +
-          </button>
+          </ButtonBlue>
         </div>
         <div className="row row-cols-12">
-          <button
+          <Button
             name="0"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             0
-          </button>
-          <button
+          </Button>
+          <Button
             name="00"
             onClick={handleClick}
-            className={` buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             00
-          </button>
-          <button
+          </Button>
+          <Button
             name="."
             onClick={handleClick}
-            className={`buttons col rounded-circle btn btn-dark`}>
+            className={`col rounded-circle btn btn-dark`}>
             .
-          </button>
-          <button
+          </Button>
+          <ButtonBlue
             onClick={handleCalculate}
-            className={` buttonsOrange col rounded-circle btn btn-primary`}>
+            className={`col rounded-circle btn btn-primary`}>
             =
-          </button>
+          </ButtonBlue>
         </div>
       </div>
     </div>
