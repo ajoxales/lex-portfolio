@@ -5,22 +5,22 @@ import Footer from "@/components/Footer";
 import "../app/globals.css";
 
 const poppins = Poppins({
-	subsets: ["latin"],
-	weight: ["300", "400", "500", "600", "700"],
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
 });
 
 export default function RootLayout({ children }) {
-	return (
-		<html lang="en">
-			<head>
-				<title>Lex Oxales</title>
-				<link rel="icon" href="/code.png" />
-			</head>
-			<body className={`${poppins.className}`} id="about">
-				<NavbarComp />
-				{children}
-				<Footer />
-			</body>
-		</html>
-	);
+  return (
+    <html lang="en">
+      <head>
+        <title>Lex Oxales</title>
+        <link rel="icon" href="/code.png" />
+      </head>
+      <body className={`${poppins.className}`} id="about">
+        <NavbarComp />
+        {children}
+        <Footer />
+      </body>
+    </html>
+  );
 }
