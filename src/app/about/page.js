@@ -47,7 +47,7 @@ const About = () => {
                   className="text-white"
                   style={{ fontWeight: 600 }}
                 >
-                  I'm a 3rd-year college student pursuing Bachelor of Science in
+                  I'm a 4th-year college student pursuing Bachelor of Science in
                   Information Technology at De La Salle University - Dasmarinas.
                 </motion.p>
                 <motion.p
@@ -161,7 +161,13 @@ const About = () => {
                   <div className="badge text-bg-info">CSS3</div>
                   <div className="badge text-bg-info">Javascript</div>
                   <div className="badge text-bg-info">ReactJS</div>
+                  <div className="badge text-bg-info">NextJS</div>
+                  <div className="badge text-bg-info">Node.js</div>
+                  <div className="badge text-bg-info">MongoDB</div>
+                  <div className="badge text-bg-info">Express</div>
+                  <div className="badge text-bg-info">SQL</div>
                   <div className="badge text-bg-info">Bootstrap</div>
+                  <div className="badge text-bg-info">Tailwind CSS</div>
                   <div className="badge text-bg-info">Git</div>
                   <div className="badge text-bg-info">Github</div>
                   <div className="badge text-bg-info">Figma</div>
@@ -186,79 +192,6 @@ const About = () => {
                   <div className="badge text-bg-info">Illustrator</div>
                   <div className="badge text-bg-info">Lightroom</div>
                 </h3>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  ease: "easeOut",
-                  delay: 1.2,
-                }}
-              >
-                <h1 className="pt-5" style={{ fontSize: "2rem" }}>
-                  Goals & Dreams
-                </h1>
-                <motion.p
-                  initial={{ x: -40, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{
-                    ease: "easeOut",
-                    delay: 0.4,
-                  }}
-                  className="mb-4"
-                >
-                  In terms of my <strong>goals and dreams</strong>, I aspire to
-                  make meaningful contributions to the IT industry by developing
-                  sustainable and socially responsible technology solutions. I
-                  also aspire to achieve financial freedom, travel to different
-                  countries, and make my family comfortable.
-                </motion.p>
-              </motion.div>
-
-              <motion.div
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                transition={{
-                  ease: "easeOut",
-                  delay: 1.3,
-                }}
-              >
-                <h1 className="pt-5" style={{ fontSize: "2rem" }}>
-                  Self Reflection
-                </h1>
-                <motion.p
-                  initial={{ x: -40, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{
-                    ease: "easeOut",
-                    delay: 0.4,
-                  }}
-                  className="mb-4"
-                >
-                  As I continue to grow both personally and professionally, I
-                  strive to embody values that reflect a God-centered, socially
-                  responsible, and ethical mindset. I am committed to ensuring
-                  that all my actions are aligned with these principles,
-                  consistently choosing to act with integrity and
-                  professionalism in everything I do.
-                </motion.p>
-
-                <motion.p
-                  initial={{ x: -40, opacity: 0 }}
-                  animate={{ x: 0, opacity: 1 }}
-                  transition={{
-                    ease: "easeOut",
-                    delay: 0.4,
-                  }}
-                  className="mb-4"
-                >
-                  An object that best symbolizes me is <strong>fire</strong>. It
-                  represents my burning passion, drive, and commitment to
-                  achieving my goals. Just as fire can ignite change and
-                  transformation, I am fueled by my desire to make a meaningful
-                  difference in the world around me.
-                </motion.p>
               </motion.div>
             </div>
           </div>
